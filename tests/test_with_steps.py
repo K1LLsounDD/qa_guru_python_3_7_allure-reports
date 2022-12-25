@@ -6,11 +6,11 @@ from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 
 @allure.tag('web')
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.BLOCKER)
 @allure.label('owner', 'K1LLsounDD')
-@allure.link('https://github.com/')
+@allure.link('https://github.com/', name='Github url')
 @allure.feature('Checking if a task is in the repository')
-@allure.story('Tests on pure Selene')
+@allure.story('Tests with steps')
 def test_github_search():
     with allure.step('Open github in a browser with a screen resolution of 1920x1080.'):
         browser.config.window_width = 1920
